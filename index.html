@@ -1,92 +1,89 @@
 <!DOCTYPE html>
-<html style="color: red">
-	<head style="color: black">
-		<title>Привет</title>>
-		<meta charset="utf-8">
-		<meta name="keywords" content="мой сайт, html, привет">
-		<meta name="description" content="это сайт помогает создавать сайты">
-		<style>
-			table {color: green
-			}
-		</style>
-		<link rel="stylesheet" href="style.css">
-	</head>
-	<body>
-		это мой 1 сайт
-		<h1>это заголовок h1</h1>
-		<h2 id="idev" style="color: black">это заголовок h2</h2>
-		<p><b>это текст</b> <br><em>тега p</em></p>
-		<h3>это заголовок h3</h3>
-		<h4>это заголовок h4</h4>
-		<h5>это заголовок h5</h5>
-		<h6>это заголовок h6</h6>
-		<br>
-		<a href="#idev">переход к заголовку h2</a>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <title>Булочки и пончики</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #fff0e6;
+      color: #5a3825;
+      margin: 0;
+      padding: 20px;
+    }
+    header {
+      text-align: center;
+      padding-bottom: 20px;
+    }
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+    }.products {
+      display: flex;
+      gap: 30px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }.product {
+      background: #fff7f0;
+      border: 2px solid #d98c59;
+      border-radius: 10px;
+      width: 220px;
+      padding: 15px;
+      box-shadow: 3px 3px 5px rgba(0,0,0,0.1);
+      text-align: center;
+    }.product img {
+      width: 180px;
+      border-radius: 10px;
+    }.product h2 {
+      margin: 15px 0 10px;
+    }.product p {
+      font-size: 1.1em;
+      margin-bottom: 15px;
+    }
+    button {
+      background-color: #d98c59;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 1em;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #b96f38;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Булочки и Пончики</h1>
+    <p>Вкусные свежие угощения прямо здесь!</p>
+  </header>
 
-		<ul class="list">
-			<li>перевый элемент списка</li>
-			<li height="150">второй элемент списка</li>
-			<li>третий элемент списка</li>
-			<li>первый уровень</li>
-			<ul>
-				<li>второй уровень</li>
-				<li>второй уровень</li>
-			</ul>
-			<li>четвёртый элемент списка</li>
-			<li>пятый элемент списка</li>
-			<li><a href="https://ya.ru" target="_blank">ссылка на главную страницу яндекса</a></li>
-			<li class="font-size-md color-red"><a href="https://ya.ru" target="_blank">1 ссылка</a></li>
-			<br>
-			<li class="font-size-md color-brown0-"><a href="https://ya.ru" target="_blank">2 ссылка</a></li>
-		</ul>
+  <div class="products">
+    <div class="product">
+      <img src="https://i.imgur.com/j7lD03H.jpg" alt="Булочка с корицей" />
+      <h2>Булочка с корицей</h2>
+      <p>Нежная булочка с ароматной корицей.</p>
+      <p><strong>Цена: 80 ₽</strong></p>
+      <button onclick="alert('Булочка с корицей добавлена в корзину!')">Купить</button>
+    </div>
 
-		<hr>
+    <div class="product">
+      <img src="https://i.imgur.com/0wWkl9n.jpg" alt="Пончик с глазурью" />
+      <h2>Пончик с глазурью</h2>
+      <p>Пышный пончик с сладкой глазурью.</p>
+      <p><strong>Цена: 70 ₽</strong></p>
+      <button onclick="alert('Пончик с глазурью добавлен в корзину!')">Купить</button>
+    </div>
 
-		<table border="1">
-			<thead>
-				<tr>
-					<th bgcolor="gray">Наименование фрукта</th>
-					<th bgcolor="gray">Кол-во</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr>
-					<td class="zhirn-bold" bgcolor="blue">Яблоко</td>
-					<td bgcolor="blue">2</td>
-				</tr>
-				<tr>
-					<td class="zhirn-bold" bgcolor="green">Апельсин</td>
-					<td bgcolor="green">3</td>
-				</tr>
-			</tbody>
-			<tfoot>
-				<tr>
-					<td colspan="2" bgcolor="cyan">Итог: 5</td>
-				</tr>
-			</tfoot>
-		</table>
-
-		<br>
-		<form class="" action="https://youtube.ru" target="_blank" method="post">
-			<input type="text">
-			<input type="submit" name="" value="Отправить">
-		</form>
-
-		<br>
-			<form class="" action="https://youtube.ru" target="_blank" method="post">
-			<input type="number">
-			<input type="submit" name="" value="Отправить">
-		</form>
-		<br>
-			<form class="" action="https://youtube.ru" target="_blank" method="post">
-			<input type="month">
-			<input type="submit" name="" value="Отправить">
-		</form>
-
-		<hr>
-		<table class="konec_stranici" bgcolor="red"><th>конец страницы<th></table>
-		<br>
-		<br>
-		<br>
-	</body>
-</html>>
+    <div class="product">
+      <img src="https://i.imgur.com/Eu9X3jg.jpg" alt="Шоколадный пончик" />
+      <h2>Шоколадный пончик</h2>
+      <p>Пончик с насыщенной шоколадной глазурью.</p>
+      <p><strong>Цена: 90 ₽</strong></p>
+      <button onclick="alert('Шоколадный пончик добавлен в корзину!')">Купить</button>
+    </div>
+  </div>
+</body>
+</html>
